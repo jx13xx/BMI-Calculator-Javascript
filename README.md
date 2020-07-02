@@ -25,3 +25,11 @@ We need to add a text input field on the **index.html** first to display it on t
 </body>
 ```
 To add the elements on the javascript file we need to first add the `document.querySelector()` function 
+
+```javascript 
+//Creating elements
+const heightEl = document.querySelector('#height') // input entry
+const weightEl = document.querySelector('#weight') // input entry
+const cal_btn = document.querySelector('#cal-bmi') //button
+const summary = document.createElement('h2')       //result display text
+```
