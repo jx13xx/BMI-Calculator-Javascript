@@ -9,3 +9,19 @@
 The main input fields that are required to calculate the BMI are the height and weight of the person.
 We need to add a text input field on the **index.html** first to display it on the webpage then create the
 **document.query()** tag on the main.js file
+
+```html
+<body>
+    <h1> BMI Calculator </h1>
+    <div>
+
+        <input type="text" class="input-entry" id="height" placeholder="Enter your Height (cm)" name="text">
+        <input type="text" class="input-entry" id="weight" placeholder="Enter your weight (kg)" name="text">
+        <button id="cal-bmi" class="button">Calculate BMI</button>
+        <label id="result" class="result"></label>
+    </div>
+
+    <script src ="scripts/main.js"></script>
+</body>
+```
+To add the elements on the javascript file we need to first add the `document.querySelector()` function 
