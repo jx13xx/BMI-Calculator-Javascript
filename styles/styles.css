@@ -1,0 +1,47 @@
+
+html {
+    font-size: 68.5%;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+body{
+    background: #2B292E;
+    color: #fafafa;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    n
+
+}
+
+.input-entry{
+    padding: 10px 10px;
+    text-align: center;
+
+
+}
+
+button {
+ background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: 10px;
+  top: 2px;
+}
+
+.result{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #9932CC
+
+}
+
