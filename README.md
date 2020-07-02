@@ -52,4 +52,19 @@ weightEl.addEventListener('input', function (e) {
 })
 ```
 
+Once the **Calculate BMI** button is pushed the findBMI() is being called which takes the input parametrs (height, weight)
+BMI table for adults
+
+This is the World Health Organization's (WHO) recommended body weight based on BMI values for adults. It is used for both men and women, age 18 or older.
+Category	BMI range - kg/m2
+
+| Weight  | Range |
+| ------------- | ------------- |
+| Less than 18.5 | Underweight  |
+| Between 18.5 and 24.9  | Healthy Weight  |
+| Between 25 and 29.9  | Overweight  |
+| Over 30  | Obese  |
+
+
+
 
