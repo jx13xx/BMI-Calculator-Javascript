@@ -33,3 +33,23 @@ const weightEl = document.querySelector('#weight') // input entry
 const cal_btn = document.querySelector('#cal-bmi') //button
 const summary = document.createElement('h2')       //result display text
 ```
+The values from the input fields can retrived using the `.value` function. In order to actively listen for value from the input parameters we use the `addEventListener()` 
+
+```javascript
+heightEl.value = values.height
+weightEl.value = values.weight
+summary.textContent = ''
+
+heightEl.addEventListener('input', function (e) {
+    values.height = e.target.value
+
+    
+})
+
+weightEl.addEventListener('input', function (e) {
+    values.weight = e.target.value
+
+})
+```
+
+
