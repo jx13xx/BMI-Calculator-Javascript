@@ -52,11 +52,9 @@ weightEl.addEventListener('input', function (e) {
 })
 ```
 
-Once the **Calculate BMI** button is pushed the findBMI() is being called which takes the input parametrs (height, weight)
-BMI table for adults
-
 This is the World Health Organization's (WHO) recommended body weight based on BMI values for adults. It is used for both men and women, age 18 or older.
 Category	BMI range - kg/m2
+BMI table for adults
 
 | Weight  | Range |
 | ------------- | ------------- |
@@ -65,6 +63,45 @@ Category	BMI range - kg/m2
 | Between 25 and 29.9  | Overweight  |
 | Over 30  | Obese  |
 
+Once the **Calculate BMI** button is pushed the findBMI() is being called which takes the input parametrs (height, weight)
 
+```javascript
+document.querySelector('#cal-bmi').addEventListener('click', function (e) {
+    // console.log(`The height is ${values.height} cm`)
+    // console.log(`The weight is ${values.weight}kg`)
+    findBMI(values.height, values.weight)
+})
+
+
+const findBMI = function(finalHeight,finalWeight){
+    const heightSquare = finalHeight * finalHeight;
+    bmi = (((finalWeight)/(heightSquare)) * 10000).toFixed(2)
+   // console.log(bmi)
+   result(bmi)
+
+
+}
+```
+The final function `result` is used to calculate the BMI and grade which range it falls in. The fucntion also displays the output message in this function
+```javascript
+const result = function(bmi) {
+    var fatLevel
+
+    if(bmi >30){
+        fatLevel = 'obese'
+    } else if( bmi >25 && bmi <29.9){
+        fatLevel ='overweight'
+    } else if( bmi >18.5 && bmi <24.9){
+        fatLevel ='healthy weight'
+    } else if(bmi < 18.5){
+        fatLevel ='underweight'
+    }
+        
+    
+    summary.textContent = `You're BMI is ${bmi}. You're in the ${fatLevel} range.`
+    document.querySelector('#result').appendChild(summary)
+
+}
+```
 
 
